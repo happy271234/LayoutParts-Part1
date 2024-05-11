@@ -1,2 +1,59 @@
 @charset "UTF-8";
 /* 回答はここから */
+.q1--horizontality__whiteBack{
+  background-color: #fff;
+  padding: 20px;
+}
+.q1--horizontality__darkBlueBox-textalign{
+  text-align: center;
+}
+.q1--horizontality__darkBlueBox-textalign span{
+  display: inline-block; /* inlineだと、paddingの上下を指定できないため、inline-blockを使用 */
+  font-size: 16px;
+  background-color: #a4b3e9;
+  padding: 10px;
+}
+.q1--horizontality__darkBlueBox-margin{
+  width: 90px;
+  margin: 0 auto;
+  font-size: 16px;
+  background-color: #a4b3e9;
+  padding: 10px;
+  text-align: center;
+}
+/* Q1-2 */
+.q1--perimeter__container{
+  display: table; /* tableは、横幅を指定しなければならない */
+}
+.q1--perimeter__whiteBox-table{
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.q1--perimeter__table{
+  font-size: 16px;
+  padding: 10px;
+  background-color: #fff;
+  display: inline-block;
+}
+.q1--perimeter__whiteBox-flex{/* ★★横並びレイアウトの最近の主流 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.q1--perimeter__flex{
+  font-size: 16px;
+  padding: 10px;
+  background-color: #fff;
+}
+.q1--perimeter__position-rel{
+  position: relative;
+}
+.q1--perimeter__position-ab{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 10px;
+  background-color: #a4b3e9;
+  transform: translate(-50%,-50%);
+}

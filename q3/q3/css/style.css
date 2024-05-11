@@ -1,1 +1,31 @@
 @charset "UTF-8";
+.cell--table{
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0px;
+  border: 1px solid #000000;
+  text-align: center;
+}
+th{
+  border: 1px solid #000000;
+  background-color: #319c4a;
+  padding: 10px;
+  font-size: 18px;
+  line-height: 26px;/* line-heightは、フォントのpxを含めたpx */
+}
+td{
+  border: 1px solid #000000;
+  padding: 10px;
+  font-size: 18px;
+  line-height: 22px;
+}
+tr{/* 疑似クラスは、使用する前にそのセレクタの要素を定義してから疑似クラスが使用できる */
+  background-color: #d5ffc7;
+}
+tr:nth-child(odd){
+  background-color: #bcbcbc;
+}
+tr:last-child{
+  border-top: 1px double rgb(255,255,255);
+}
